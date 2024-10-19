@@ -5,6 +5,22 @@
 <meta charset="utf-8">
 <meta name="description" content="O Official website de Historias Sem Sentidos">
 <link rel="icon" href="alvaro.png" type="image/x-icon">
+   <script>
+    const favicons = [
+      'alvaro.png',
+      'eduardo.png',
+      'paulo.png',
+'ricardo.png',
+    ];
+
+    function getFaviconDoDia() {
+      const dataAtual = new Date();
+      const diaDoAno = Math.floor((dataAtual - new Date(dataAtual.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
+      return favicons[diaDoAno % favicons.length];
+    }
+
+    document.getElementById('favicon').href = getFaviconDoDia();
+  </script>
 </head>
 <body>
 <link rel="stylesheet" href="style.css">

@@ -4,7 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Blades</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1d1d1d;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .blade-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .blade {
+            width: 200px;
+            height: 400px;
+            background-color: #3a3a3a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 30px; /* Curvatura dos Blades */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .blade:hover {
+            transform: scale(1.05); /* Efeito ao passar o mouse */
+        }
+    </style>
 </head>
 <body>
     <div class="blade-container">

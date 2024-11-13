@@ -4,69 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Blades</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #1d1d1d;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .blade-container {
-            display: flex;
-            gap: 20px;
-            overflow: hidden; /* Evita que as bordas dos blades extrapolem */
-        }
-
-        .blade {
-            width: 150px;
-            height: 300px;
-            background-color: #3a3a3a;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            border-radius: 100px / 50px; /* Curvatura dos Blades para parecerem parênteses */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s;
-            border: 2px solid #282828; /* Adiciona uma borda sólida para melhor visualização */
-        }
-
-        .blade:hover {
-            transform: scale(1.05); /* Efeito ao passar o mouse */
-        }
-
-        .menu {
-            width: 200px;
-            height: 100vh;
-            background-color: #2a2a2a;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            padding: 20px;
-            box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .menu-item {
-            margin: 10px 0;
-            padding: 10px;
-            width: 100%;
-            text-align: center;
-            background-color: #3a3a3a;
-            border-radius: 10px;
-            transition: background-color 0.3s;
-        }
-
-        .menu-item:hover {
-            background-color: #505050;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="menu">
@@ -80,6 +18,7 @@
         <div class="blade">Seção 2</div>
         <div class="blade">Seção 3</div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
 
